@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pomodoro Timer</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Pomodoro Timer </h1>
+
+    <div id="buttons">
+      <button onclick="chooseTimer(0)">Pomodoro</button>
+      <button onclick="chooseTimer(1)">Short Break</button>
+      <button onclick="chooseTimer(2)">Long Break</button>
+    </div>
+
+    <div id="timer">
+      <span id="minutes">25</span>
+      <span>:</span>
+      <span id="seconds">00</span>
+    </div>
+
+    <button id="startStopBtn" onclick="toggleTimer()">Start</button>
+
+    <div id="todo">
+        <h2>To-Do List</h2>
+        <input type="text" id="todoInput" placeholder="Add a task">
+        <button onclick="addTodoItem()">Add</button>
+        <ul id="todoList"></ul>
+      </div>
+  </div>
+
+  <!-- Add a new div element for the overlay -->
+<div id="overlay"></div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
